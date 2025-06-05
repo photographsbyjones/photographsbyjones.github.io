@@ -11,9 +11,11 @@
   p.tagline { font-style: italic; margin: 5px 0 20px 0; }
   section { max-width: 900px; margin: auto; padding: 20px; background: #fff; }
   .about { margin-bottom: 40px; }
-  .categories { display: flex; justify-content: space-around; flex-wrap: wrap; }
-  .category { width: 200px; margin-bottom: 20px; text-align: center; }
+  .categories { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px; }
+  .category { flex: 1 1 220px; min-width: 220px; text-align: center; }
   .category img { width: 100%; height: auto; border-radius: 8px; }
+  .portrait-images { display: flex; gap: 15px; flex-wrap: wrap; justify-content: center; }
+  .portrait-images img { flex: 1 1 200px; max-width: 200px; height: auto; border-radius: 8px; }
 </style>
 </head>
 <body>
@@ -28,8 +30,12 @@
   </div>
   <div class="categories">
     <div class="category">
-      <img src="2Z5A02966.jpg" alt="Portraits" />
       <h3>Portraits</h3>
+      <div class="portrait-images">
+        <img src="2Z5A02966.jpg" alt="Portrait 1" />
+        <img src="2Z5A549222.jpg" alt="Portrait 2" />
+        <img src="5U9A00444.jpg" alt="Portrait 3" />
+      </div>
     </div>
     <div class="category">
       <img src="https://images.unsplash.com/photo-1500534623283-312aade485b7?auto=format&fit=crop&w=400&q=80" alt="Black & White" />
