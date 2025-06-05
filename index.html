@@ -1,155 +1,115 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Photographs by Jones</title>
-  
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 1100px;
-      margin: auto;
-      padding: 20px;
-      background: #f4f4f4;
-      color: #333;
-    }
-    h1, h2 {
-      text-align: center;
-    }
-    .gallery {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 10px;
-      margin-bottom: 40px;
-    }
-    .gallery a img {
-      max-height: 250px;
-      object-fit: contain;
-      border: 2px solid #ccc;
-      border-radius: 4px;
-      transition: border-color 0.3s;
-    }
-    .gallery a img:hover {
-      border-color: #666;
-      cursor: pointer;
-    }
-    section {
-      margin-bottom: 50px;
-    }
-    footer {
-      text-align: center;
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: #666;
-    }
-    .contact {
-      text-align: center;
-      margin-top: 30px;
-      font-size: 1.1em;
-    }
-    .instagram-link {
-      display: inline-block;
-      margin-top: 10px;
-      text-decoration: none;
-      color: #0077cc;
-      font-weight: bold;
-    }
-    .instagram-link:hover {
-      text-decoration: underline;
-    }
-  </style>
-
-  <!-- Lightbox2 CSS -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" rel="stylesheet" />
-
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Photographs by Jones</title>
+<link href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" rel="stylesheet" />
+<style>
+  body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #fff; color: #333; }
+  header { text-align: center; padding: 2rem; background: #222; color: #eee; }
+  h1 { margin: 0 0 0.5rem 0; }
+  h2 { margin-top: 2rem; text-align: center; }
+  .gallery { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; padding: 1rem; }
+  .gallery a img { max-width: 300px; height: auto; border-radius: 5px; }
+  footer { text-align: center; margin: 3rem 0 2rem; }
+  .contact { max-width: 400px; margin: 0 auto; padding: 1rem; }
+  .contact label { display: block; margin-top: 1rem; }
+  .contact input, .contact textarea { width: 100%; padding: 0.5rem; margin-top: 0.25rem; }
+  .contact button { margin-top: 1rem; padding: 0.5rem 1rem; background: #222; color: #eee; border: none; cursor: pointer; }
+  nav { text-align: center; margin-top: 1rem; }
+  nav a { margin: 0 10px; color: #222; text-decoration: none; font-weight: bold; }
+  nav a:hover { text-decoration: underline; }
+  .follow-instagram { text-align: center; margin: 2rem 0; }
+  .follow-instagram a { color: #e1306c; font-weight: bold; text-decoration: none; font-size: 1.2rem; }
+  .follow-instagram a:hover { text-decoration: underline; }
+</style>
 </head>
 <body>
 
-  <header>
-    <h1>Photographs by Jones</h1>
-    <p style="text-align:center; font-style: italic;">Telling your story through the lens</p>
-  </header>
+<header>
+  <h1>Photographs by Jones</h1>
+  <p>Telling your story through the lens</p>
+  <p>My name is Dwayne Jones, and I’ve been behind the lens for over 20 years. Photography has always been more than a profession — it’s a way to document the emotion, grit, and beauty of real life. Whether I’m shooting portraits, events, or everyday moments, my goal is to tell a story with every frame.</p>
+  <nav>
+    <a href="#portrait">Portrait</a>
+    <a href="#nature">Nature</a>
+    <a href="#wedding-family">Wedding & Family</a>
+    <a href="#studio">Studio</a>
+    <a href="#outdoor-portraits">Outdoor Portraits</a>
+  </nav>
+</header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>My name is Dwayne Jones, and I’ve been behind the lens for over 20 years. Photography has always been more than a profession — it’s a way to document the emotion, grit, and beauty of real life. Whether I’m shooting portraits, events, or everyday moments, my goal is to tell a story with every frame.</p>
+<section id="portrait">
+  <h2>Portrait</h2>
+  <div class="gallery">
+    <a href="Portrait 7.jpg" data-lightbox="portrait" data-title="Portrait 7"><img src="Portrait 7.jpg" alt="Portrait 7"></a>
+    <a href="Portrait 8.jpg" data-lightbox="portrait" data-title="Portrait 8"><img src="Portrait 8.jpg" alt="Portrait 8"></a>
+  </div>
+</section>
+
+<section id="nature">
+  <h2>Nature</h2>
+  <div class="gallery">
+    <a href="Nature 1.JPG" data-lightbox="nature" data-title="Nature 1"><img src="Nature 1.JPG" alt="Nature 1"></a>
+    <a href="Nature 2.jpg" data-lightbox="nature" data-title="Nature 2"><img src="Nature 2.jpg" alt="Nature 2"></a>
+    <a href="Nature 3.jpg" data-lightbox="nature" data-title="Nature 3"><img src="Nature 3.jpg" alt="Nature 3"></a>
+    <a href="Nature 4.jpg" data-lightbox="nature" data-title="Nature 4"><img src="Nature 4.jpg" alt="Nature 4"></a>
+    <a href="Nature 5.jpg" data-lightbox="nature" data-title="Nature 5"><img src="Nature 5.jpg" alt="Nature 5"></a>
+    <a href="Nature 7. jpg.jpg" data-lightbox="nature" data-title="Nature 7"><img src="Nature 7. jpg.jpg" alt="Nature 7"></a>
+    <a href="Nature 9.jpg" data-lightbox="nature" data-title="Nature 9"><img src="Nature 9.jpg" alt="Nature 9"></a>
+  </div>
+</section>
+
+<section id="wedding-family">
+  <h2>Wedding & Family</h2>
+  <div class="gallery">
+    <a href="Wedding 1.jpg" data-lightbox="wedding-family" data-title="Wedding 1"><img src="Wedding 1.jpg" alt="Wedding 1"></a>
+    <a href="Wedding 2.JPG" data-lightbox="wedding-family" data-title="Wedding 2"><img src="Wedding 2.JPG" alt="Wedding 2"></a>
+    <a href="Wedding 3.jpg" data-lightbox="wedding-family" data-title="Wedding 3"><img src="Wedding 3.jpg" alt="Wedding 3"></a>
+    <a href="2Z5A95122.jpg" data-lightbox="wedding-family" data-title="Wedding 4"><img src="2Z5A95122.jpg" alt="Wedding 4"></a>
+    <a href="2Z5A954555.jpg" data-lightbox="wedding-family" data-title="Wedding 5"><img src="2Z5A954555.jpg" alt="Wedding 5"></a>
+  </div>
+</section>
+
+<section id="studio">
+  <h2>Studio</h2>
+  <div class="gallery">
+    <a href="Studio 1.jpg" data-lightbox="studio" data-title="Studio 1"><img src="Studio 1.jpg" alt="Studio 1"></a>
+    <a href="Studio 2.JPG" data-lightbox="studio" data-title="Studio 2"><img src="Studio 2.JPG" alt="Studio 2"></a>
+    <a href="Studio 3.jpg" data-lightbox="studio" data-title="Studio 3"><img src="Studio 3.jpg" alt="Studio 3"></a>
+    <a href="Studio 4.jpg" data-lightbox="studio" data-title="Studio 4"><img src="Studio 4.jpg" alt="Studio 4"></a>
+    <a href="Studio 5.jpg" data-lightbox="studio" data-title="Studio 5"><img src="Studio 5.jpg" alt="Studio 5"></a>
+    <a href="Studio 6.jpg" data-lightbox="studio" data-title="Studio 6"><img src="Studio 6.jpg" alt="Studio 6"></a>
+    <a href="Studio 9.jpeg" data-lightbox="studio" data-title="Studio 9"><img src="Studio 9.jpeg" alt="Studio 9"></a>
+  </div>
+</section>
+
+<section id="outdoor-portraits">
+  <h2>Outdoor Portraits</h2>
+  <div class="gallery">
+    <a href="Outdoor 1.jpg" data-lightbox="outdoor-portraits" data-title="Outdoor 1"><img src="Outdoor 1.jpg" alt="Outdoor 1"></a>
+    <a href="Outdoor 2.jpg" data-lightbox="outdoor-portraits" data-title="Outdoor 2"><img src="Outdoor 2.jpg" alt="Outdoor 2"></a>
+    <a href="Outdoor 3 .jpg" data-lightbox="outdoor-portraits" data-title="Outdoor 3"><img src="Outdoor 3 .jpg" alt="Outdoor 3"></a>
+    <a href="Outdoor 4.jpg" data-lightbox="outdoor-portraits" data-title="Outdoor 4"><img src="Outdoor 4.jpg" alt="Outdoor 4"></a>
+    <a href="Outdoor 5.jpg" data-lightbox="outdoor-portraits" data-title="Outdoor 5"><img src="Outdoor 5.jpg" alt="Outdoor 5"></a>
+    <a href="Outdoor 6.jpeg" data-lightbox="outdoor-portraits" data-title="Outdoor 6"><img src="Outdoor 6.jpeg" alt="Outdoor 6"></a>
+    <a href="Outdoor 7.jpg" data-lightbox="outdoor-portraits" data-title="Outdoor 7"><img src="Outdoor 7.jpg" alt="Outdoor 7"></a>
+    <a href="Outdoor 8.jpg" data-lightbox="outdoor-portraits" data-title="Outdoor 8"><img src="Outdoor 8.jpg" alt="Outdoor 8"></a>
+  </div>
+</section>
+
+<div class="follow-instagram">
+  <a href="https://www.instagram.com/photographsbyjone5/" target="_blank" rel="noopener noreferrer">Follow me on Instagram</a>
+</div>
+
+<footer>
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>For inquiries or bookings, email me at <a href="mailto:dwaynelove2003@yahoo.com">dwaynelove2003@yahoo.com</a></p>
   </section>
+</footer>
 
-  <section id="portrait">
-    <h2>Portrait</h2>
-    <div class="gallery">
-      <a href="Portrait 1.jpg" data-lightbox="portrait" data-title="Portrait 1"><img src="Portrait 1.jpg" alt="Portrait 1"></a>
-      <a href="Portrait 2.jpg" data-lightbox="portrait" data-title="Portrait 2"><img src="Portrait 2.jpg" alt="Portrait 2"></a>
-      <a href="Portrait 3.jpg" data-lightbox="portrait" data-title="Portrait 3"><img src="Portrait 3.jpg" alt="Portrait 3"></a>
-      <a href="Portrait 5.CR2" data-lightbox="portrait" data-title="Portrait 5"><img src="Portrait 5.CR2" alt="Portrait 5"></a>
-      <a href="Portrait 7.jpg" data-lightbox="portrait" data-title="Portrait 7"><img src="Portrait 7.jpg" alt="Portrait 7"></a>
-      <a href="Portrait 8.jpg" data-lightbox="portrait" data-title="Portrait 8"><img src="Portrait 8.jpg" alt="Portrait 8"></a>
-    </div>
-  </section>
-
-  <section id="nature">
-    <h2>Nature</h2>
-    <div class="gallery">
-      <a href="Nature 1.JPG" data-lightbox="nature" data-title="Nature 1"><img src="Nature 1.JPG" alt="Nature 1"></a>
-      <a href="Nature 2.jpg" data-lightbox="nature" data-title="Nature 2"><img src="Nature 2.jpg" alt="Nature 2"></a>
-      <a href="Nature 3.jpg" data-lightbox="nature" data-title="Nature 3"><img src="Nature 3.jpg" alt="Nature 3"></a>
-      <a href="Nature 4.jpg" data-lightbox="nature" data-title="Nature 4"><img src="Nature 4.jpg" alt="Nature 4"></a>
-      <a href="Nature 5.jpg" data-lightbox="nature" data-title="Nature 5"><img src="Nature 5.jpg" alt="Nature 5"></a>
-      <a href="Nature 7. jpg.jpg" data-lightbox="nature" data-title="Nature 7"><img src="Nature 7. jpg.jpg" alt="Nature 7"></a>
-      <a href="Nature 9.jpg" data-lightbox="nature" data-title="Nature 9"><img src="Nature 9.jpg" alt="Nature 9"></a>
-    </div>
-  </section>
-
-  <section id="studio">
-    <h2>Studio</h2>
-    <div class="gallery">
-      <a href="Studio 1.jpg" data-lightbox="studio" data-title="Studio 1"><img src="Studio 1.jpg" alt="Studio 1"></a>
-      <a href="Studio 2.JPG" data-lightbox="studio" data-title="Studio 2"><img src="Studio 2.JPG" alt="Studio 2"></a>
-      <a href="Studio 3.jpg" data-lightbox="studio" data-title="Studio 3"><img src="Studio 3.jpg" alt="Studio 3"></a>
-      <a href="Studio 4.jpg" data-lightbox="studio" data-title="Studio 4"><img src="Studio 4.jpg" alt="Studio 4"></a>
-      <a href="Studio 5.jpg" data-lightbox="studio" data-title="Studio 5"><img src="Studio 5.jpg" alt="Studio 5"></a>
-      <a href="Studio 6.jpg" data-lightbox="studio" data-title="Studio 6"><img src="Studio 6.jpg" alt="Studio 6"></a>
-      <a href="Studio 9.jpeg" data-lightbox="studio" data-title="Studio 9"><img src="Studio 9.jpeg" alt="Studio 9"></a>
-    </div>
-  </section>
-
-  <section id="wedding-family">
-    <h2>Wedding & Family</h2>
-    <div class="gallery">
-      <a href="Wedding 1.jpg" data-lightbox="wedding-family" data-title="Wedding 1"><img src="Wedding 1.jpg" alt="Wedding 1"></a>
-      <a href="Wedding 2.JPG" data-lightbox="wedding-family" data-title="Wedding 2"><img src="Wedding 2.JPG" alt="Wedding 2"></a>
-      <a href="Wedding 3.jpg" data-lightbox="wedding-family" data-title="Wedding 3"><img src="Wedding 3.jpg" alt="Wedding 3"></a>
-      <a href="2Z5A95122.jpg" data-lightbox="wedding-family" data-title="Wedding 4"><img src="2Z5A95122.jpg" alt="Wedding 4"></a>
-      <a href="2Z5A954555.jpg" data-lightbox="wedding-family" data-title="Wedding 5"><img src="2Z5A954555.jpg" alt="Wedding 5"></a>
-    </div>
-  </section>
-
-  <section id="outdoor-portraits">
-    <h2>Outdoor Portraits</h2>
-    <div class="gallery">
-      <a href="Outdoor 1.jpg" data-lightbox="outdoor-portraits" data-title="Outdoor 1"><img src="Outdoor 1.jpg" alt="Outdoor 1"></a>
-      <a href="Outdoor 2.jpg" data-lightbox="outdoor-portraits" data-title="Outdoor 2"><img src="Outdoor 2.jpg" alt="Outdoor 2"></a>
-      <a href="Outdoor 3 .jpg" data-lightbox="outdoor-portraits" data-title="Outdoor 3"><img src="Outdoor 3 .jpg" alt="Outdoor 3"></a>
-      <a href="Outdoor 4.jpg" data-lightbox="outdoor-portraits" data-title="Outdoor 4"><img src="Outdoor 4.jpg" alt="Outdoor 4"></a>
-      <a href="Outdoor 5.jpg" data-lightbox="outdoor-portraits" data-title="Outdoor 5"><img src="Outdoor 5.jpg" alt="Outdoor 5"></a>
-      <a href="Outdoor 6.jpeg" data-lightbox="outdoor-portraits" data-title="Outdoor 6"><img src="Outdoor 6.jpeg" alt="Outdoor 6"></a>
-      <a href="Outdoor 7.jpg" data-lightbox="outdoor-portraits" data-title="Outdoor 7"><img src="Outdoor 7.jpg" alt="Outdoor 7"></a>
-      <a href="Outdoor 8.jpg" data-lightbox="outdoor-portraits" data-title="Outdoor 8"><img src="Outdoor 8.jpg" alt="Outdoor 8"></a>
-    </div>
-  </section>
-
-  <section class="contact">
-    <p>Interested in booking a session? Reach out to me at <a href="mailto:dwaynelove2003@yahoo.com">dwaynelove2003@yahoo.com</a></p>
-  </section>
-
-  <footer>
-    <p>Follow me on <a class="instagram-link" href="https://www.instagram.com/photographsbyjone5/" target="_blank" rel="noopener noreferrer">Instagram</a></p>
-  </footer>
-
-  <!-- Lightbox2 JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
 </body>
 </html>
